@@ -1,8 +1,3 @@
 export default function Experience() {
-     return (
-   <div>
-        Experience page
-   </div>
-     );
-   }
-   
+  return <div className="flex item-center">Experience page</div>
+}
