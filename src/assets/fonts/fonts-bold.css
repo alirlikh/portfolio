@@ -1,0 +1,5 @@
+@font-face {
+  font-family: "raleway-bold";
+  src: url("raleway-bold.eot") format("eot"), url("raleway-bold.woff") format("woff"),
+    /* url('ralweway.woff2') format('woff2'), */ url("raleway-bold.ttf") format("truetype");
+}

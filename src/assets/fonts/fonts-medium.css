@@ -1,0 +1,5 @@
+@font-face {
+  font-family: "raleway-medium";
+  src: url("raleway-medium.eot") format("eot"), url("raleway-medium.woff") format("woff"),
+    /* url('ralweway.woff2') format('woff2'), */ url("raleway-medium.ttf") format("truetype");
+}

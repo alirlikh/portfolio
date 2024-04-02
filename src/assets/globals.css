@@ -31,29 +31,30 @@ body {
     text-wrap: balance;
   }
 } */
+@layer base {
+  :root {
+    /* --color-gray-50: 249, 250, 251; */
+    --color-gray-900: 17 24 39;
+    --color-gray-800: 31 41 55;
+    --color-gray-700: 55 65 81;
+    --color-gray-400: 156 163 175;
+    --color-gray-300: 209 213 219;
+    --color-white: 255 255 255;
+    --color-green-500: 34 197 94;
+    --color-purple-300: 216 180 254;
+    /* --color-gray-gradient */
+  }
 
-:root{
+  body {
+    @apply font-body;
+    /* @apply font-heading; */
+  }
 
-  /* --color-gray-50: 249, 250, 251; */
-  --color-gray-900:rgb(17 24 39)
-  --color-gray-800:rgb(31 41 55)
-  --color-gray-700: rgb(55 65 81)
-  --color-gray-400: rgb(156 163 175)
-  --color-gray-300: rgb(209 213 219)
-  --color-white:rgb(255 255 255)
-  --color-green-500: rgb(34 197 94)
-  --color-purple-300: rgb(216 180 254)
-  /* --color-gray-gradient */
-
+  a {
+    @apply no-underline;
+  }
 }
 
-body {
-  @apply font-body;
-  @apply font-heading;
-}
-
-a {
-  @apply no-underline;
-}
-
-@import "./fonts/fonts.css";
+@import "./fonts/fonts-light.css";
+@import "./fonts/fonts-bold.css";
+@import "./fonts/fonts-medium.css";
