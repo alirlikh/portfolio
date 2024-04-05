@@ -6,7 +6,7 @@ import Link from "next/link"
 export default function Home() {
   return (
     <>
-      <section className="p-2 flex flex-col-reverse items-center md:flex-row ">
+      <section className="p-2 flex flex-col-reverse items-center md:flex-row md:justify-between">
         <div className="flex flex-col w-full md:w-1/2 md:max-w-4xl">
           <div className="flex flex-col items-center m-2 mb-5 md:items-start">
             <h2 className="text-7xl font-bold my-4 p-2">Title</h2>
