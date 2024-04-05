@@ -33,7 +33,7 @@ const config: Config = {
         white: `rgb(var(--color-white))`
       },
       fontFamily: {
-        body: ["raleway-bold", "Open Sans"],
+        body: ["raleway-light", "Open Sans"],
         heading: ["raleway-bold"]
       }
     }
