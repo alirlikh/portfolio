@@ -38,7 +38,7 @@ export default function Home() {
           </span>
         </div>
       </div>
-      <div className="my-6 mx-auto p-2 w-1/3 md:max-w-md ">
+      <div className="my-6 mx-auto p-2 w-1/3 md:max-w-md md:m-0 ">
         <Image
           src={profile}
           alt="profile image"
