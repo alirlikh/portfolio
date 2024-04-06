@@ -21,37 +21,22 @@ export default function Header() {
           <li className="w-32">
             <div className="hidden md:flex flex-row  items-center justify-between ">
               <NavLink href={"https://www.google.com"} passHref legacyBehavior>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="transition-all  duration-150 delay-50 hover:brightness-[0.6]"
-                >
+                <a target="_blank" rel="noopener noreferrer">
                   <Figma></Figma>
                 </a>
               </NavLink>
               <NavLink href={"https://www.google.com"} passHref legacyBehavior>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="transition-all  duration-150 delay-50 hover:brightness-[0.6]"
-                >
+                <a target="_blank" rel="noopener noreferrer">
                   <Linkdin></Linkdin>
                 </a>
               </NavLink>
               <NavLink href={"https://www.google.com"} passHref legacyBehavior>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="transition-all  duration-150 delay-50 hover:brightness-[0.6]"
-                >
+                <a target="_blank" rel="noopener noreferrer">
                   <Github></Github>
                 </a>
               </NavLink>
               <NavLink href={"mailto:john@example.com"} passHref legacyBehavior>
-                <a
-                  href="mailto:john@example.com"
-                  className="transition-all  duration-150 delay-50 hover:brightness-[0.6]"
-                >
+                <a href="mailto:john@example.com">
                   <Mail></Mail>
                 </a>
               </NavLink>

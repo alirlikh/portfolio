@@ -49,6 +49,7 @@ body {
 
 a {
   @apply no-underline;
+  @apply transition-all duration-150 hover:brightness-[0.6];
 }
 /* } */
 
