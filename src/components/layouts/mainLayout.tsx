@@ -8,7 +8,7 @@ export default function RootLayout({ children }: any) {
       <div>
         <main>{children}</main>
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   )
 }
