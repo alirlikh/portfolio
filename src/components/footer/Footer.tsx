@@ -1,20 +1,46 @@
 import { Github } from "../icons/github"
 import { Linkdin } from "../icons/linkdin"
 import { Mail } from "../icons/mail"
+import NavLink from "../link/NavLink"
 
 export default function Footer() {
+  const date = new Date()
+
   return (
     <div className="flex flex-col items-start m-4 ">
       <div className="w-full py-2 bg-gray-850 px-4 rounded-full flex flex-row justify-between items-center">
         <p className="text-gray-400 text-sm m-2">Follow me</p>
         <div className="flex flex-row items-center w-24 justify-around">
-          <Github />
-          <Linkdin />
-          <Mail />
+          <NavLink href={"https://www.google.com"} passHref legacyBehavior>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-all  duration-150 delay-50 hover:brightness-[0.6]"
+            >
+              <Github></Github>
+            </a>
+          </NavLink>
+          <NavLink href={"https://www.google.com"} passHref legacyBehavior>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-all  duration-150 delay-50 hover:brightness-[0.6]"
+            >
+              <Linkdin></Linkdin>
+            </a>
+          </NavLink>
+          <NavLink href={"mailto:john@example.com"} passHref legacyBehavior>
+            <a
+              href="mailto:john@example.com"
+              className="transition-all  duration-150 delay-50 hover:brightness-[0.6]"
+            >
+              <Mail></Mail>
+            </a>
+          </NavLink>
         </div>
       </div>
       <div className="m-3">
-        <span className="text-sm text-white p-2">alireza 2024</span>
+        <span className="text-sm text-white p-2">Alireza © {date.getFullYear()}</span>
       </div>
     </div>
   )
