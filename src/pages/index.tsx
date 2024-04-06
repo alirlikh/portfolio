@@ -24,16 +24,13 @@ export default function Home() {
             <span>
               <Link
                 href={"#"}
-                className="btn bg-white text-gray-900 rounded-full py-3 px-12 text-center font-bold hover:brightness-[0.6] transition-all duration-150 delay-50 m-2"
+                className="btn bg-white text-gray-900 rounded-full py-3 px-12 text-center font-bold m-2"
               >
                 Download CV
               </Link>
             </span>
             <span className="text-purple-300">
-              <Link
-                href={"/experience"}
-                className="py-3 px-12c hover:brightness-[0.6] transition-all duration-150 delay-50 m-2"
-              >
+              <Link href={"/experience"} className="py-3 px-12c m-2">
                 See experiences
               </Link>
             </span>
