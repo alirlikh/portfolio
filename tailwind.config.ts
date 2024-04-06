@@ -19,7 +19,8 @@ const config: Config = {
       screens: {
         sm: "480px",
         md: "768px",
-        lg: "976px"
+        lg: "976px",
+        "2xl": "1536px"
       },
       colors: {
         "gray-900": `rgb(var(--color-gray-900))`,
