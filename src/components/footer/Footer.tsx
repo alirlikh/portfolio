@@ -7,7 +7,7 @@ export default function Footer() {
   const date = new Date()
 
   return (
-    <div className="flex flex-col items-start m-4 ">
+    <div className="flex flex-col items-start m-4 px-4 md:px-8">
       <div className="w-full py-2 bg-gray-850 px-4 rounded-full flex flex-row justify-between items-center">
         <p className="text-gray-400 text-sm m-2">Follow me</p>
         <div className="flex flex-row items-center w-24 justify-around">

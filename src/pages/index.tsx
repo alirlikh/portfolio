@@ -6,7 +6,7 @@ import Link from "next/link"
 export default function Home() {
   return (
     <>
-      <section className="p-2 flex flex-col-reverse items-center md:flex-row md:justify-between">
+      <section className="py-2 px-6 md:px-10 flex flex-col-reverse items-center md:flex-row md:justify-between">
         <div className="flex flex-col w-full md:w-1/2 md:max-w-4xl">
           <div className="flex flex-col items-center m-2 mb-5 md:items-start">
             <h2 className="text-7xl font-bold my-4 p-2">Title</h2>
@@ -44,7 +44,7 @@ export default function Home() {
           />
         </div>
       </section>
-      <section>silder</section>
+      {/* <section>silder</section>
       <section className="p-2">
         <div className="flex flex-col justify-center items-center *:p-2 *:my-7 md:*:my-4 *:font-extrabold *:text-6xl">
           <h2 className="text-violet-300">Codding</h2>
@@ -52,7 +52,7 @@ export default function Home() {
           <h2 className="text-violet-700">React</h2>
           <h2 className="text-violet-900">Coffe</h2>
         </div>
-      </section>
+      </section> */}
     </>
   )
 }
