@@ -7,8 +7,8 @@ export default function Footer() {
   const date = new Date()
 
   return (
-    <div className="flex flex-col items-start m-4 px-4  md:px-0 max-w-screen-2xl mx-auto">
-      <div className="w-full py-2 bg-gray-850 px-4 rounded-full flex flex-row justify-between items-center">
+    <div className="flex flex-col items-start m-4 px-4 md:px-12 ">
+      <div className="w-full py-2 bg-gray-850 px-4 rounded-full flex flex-row justify-between items-center max-w-screen-2xl mx-auto">
         <p className="text-gray-400 text-sm m-2">Follow me</p>
         <div className="flex flex-row items-center w-24 justify-around">
           <NavLink href={"https://www.google.com"} passHref legacyBehavior>
