@@ -51,6 +51,10 @@ a {
   @apply no-underline;
   @apply transition-all duration-150 hover:brightness-[0.6];
 }
+
+button {
+  @apply transition-all duration-150 hover:brightness-[0.6];
+}
 /* } */
 
 @layer utilities {
