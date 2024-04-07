@@ -31,6 +31,7 @@ const config: Config = {
         "gray-300": `rgb(var(--color-gray-300),0.1)`,
         "green-300": `rgb(var(--color-green-500))`,
         "purple-300": `rgb(var(--color-purple-300))`,
+        header: `rgb(var(--color-header),0.35)`,
         white: `rgb(var(--color-white))`
       },
       fontFamily: {
