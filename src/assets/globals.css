@@ -22,14 +22,8 @@
     rgb(var(--background-start-rgb));
 } */
 
-/* @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-} */
 /* @layer base { */
 :root {
-  /* --color-gray-50: 249, 250, 251; */
   --color-gray-900: 12, 12, 13;
   --color-gray-850: 16, 16, 16;
   --color-gray-800: 19, 19, 19;
@@ -39,7 +33,18 @@
   --color-white: 255, 255, 255;
   --color-green-500: 95, 185, 176;
   --color-purple-300: 178, 146, 255;
-  /* --color-gray-gradient */
+  --color-pagination-bullet: 96, 96, 96;
+  --color-pagination-bullet-active: 217, 217, 217;
+
+  /* --swiper-pagination-color: rgb(217, 217, 217);
+  --swiper-pagination-bullet-size: 13px;
+  --swiper-pagination-bullet-width: 20px;
+  --swiper-pagination-bullet-height: 13px;
+  --swiper-pagination-bullet-inactive-color: rgb(96, 96, 96);
+  --swiper-pagination-bullet-inactive-opacity: 0.8;
+  --swiper-pagination-bullet-opacity: 1;
+  --swiper-pagination-bullet-horizontal-gap: 4px;
+  --swiper-pagination-bullet-vertical-gap: 6px; */
 }
 
 body {
@@ -72,3 +77,4 @@ button {
 @import "./fonts/fonts-light.css";
 @import "./fonts/fonts-bold.css";
 @import "./fonts/fonts-medium.css";
+@import "./swiper-custom-css.css";

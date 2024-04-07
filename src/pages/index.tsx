@@ -2,6 +2,7 @@ import Image from "next/image"
 // import avatar from "../../public/avatar.png"
 import profile from "../../public/profile.png"
 import Link from "next/link"
+import Slider from "@/components/slider/Slider"
 
 export default function Home() {
   return (
@@ -44,7 +45,17 @@ export default function Home() {
           />
         </div>
       </section>
-      {/* <section>silder</section>
+      <section className=" flex flex-col items-center my-20 md:flex-row md:justify-between  mx-auto">
+        <div className="flex items-center justify-center p-2 my-6 w-[10%] md:basis-[20%]">
+          <p className="flex flex-col md:text-start text-gray-400 text-[16px] font-normal text-center">
+            4 years<span className="text-white font-bold text-[80px] text-center p-1">XP</span>
+            developping
+          </p>
+        </div>
+        <div className=" w-full md:w-[80%] h-[260px] p-8">
+          <Slider></Slider>
+        </div>
+      </section>
       <section className="p-2">
         <div className="flex flex-col justify-center items-center *:p-2 *:my-7 md:*:my-4 *:font-extrabold *:text-6xl">
           <h2 className="text-violet-300">Codding</h2>
@@ -52,7 +63,7 @@ export default function Home() {
           <h2 className="text-violet-700">React</h2>
           <h2 className="text-violet-900">Coffe</h2>
         </div>
-      </section> */}
+      </section>
     </>
   )
 }
