@@ -21,7 +21,7 @@ export default function Home() {
               electronic typesetting, remaining essentially unchanged
             </p>
           </div>
-          <div className="flex flex-col items-center m-2 mt-5 *:my-3 *:mx-2 md:flex-row ">
+          <div className="flex flex-col items-center m-2 mt-5 *:my-3 *:mx-2 md:flex-row text-nowrap">
             <span>
               <Link
                 href={"#"}

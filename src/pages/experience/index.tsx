@@ -20,7 +20,7 @@ export default function Experience() {
             the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
             <span className="text-white text-lg font-bold">specimen book.</span>
           </p>
-          <span>
+          <span className="text-nowrap">
             <Link
               href={"#"}
               className="btn bg-white text-gray-900 rounded-full py-3 px-12 text-center font-bold m-2"
