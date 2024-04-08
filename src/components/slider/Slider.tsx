@@ -44,7 +44,7 @@ export default function Slider() {
       {imageSrc.map((item: any, index: number) => (
         <SwiperSlide key={index} className="">
           <div
-            className="h-[200px] flex rounded-[60px] justify-start items-center p-10 *:m-3"
+            className="flex rounded-[60px] justify-start items-center p-10 *:m-3"
             style={{ backgroundColor: item.color }}
           >
             <item.src></item.src>
