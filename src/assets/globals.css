@@ -49,7 +49,7 @@
 }
 
 body {
-  @apply font-body;
+  @apply font-body leading-8;
   /* @apply font-heading; */
 }
 

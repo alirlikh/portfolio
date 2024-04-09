@@ -35,8 +35,11 @@ const config: Config = {
         white: `rgb(var(--color-white))`
       },
       fontFamily: {
-        body: ["raleway-light", "Open Sans"],
+        body: ["raleway-medium", "Open Sans"],
         heading: ["raleway-bold"]
+      },
+      lineHeight: {
+        DEFAULT: "30px"
       }
     }
   },
