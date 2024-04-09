@@ -28,7 +28,7 @@ const config: Config = {
         "gray-850": `rgb(var(--color-gray-850))`,
         "gray-700": `rgb(var(--color-gray-700))`,
         "gray-400": `rgb(var(--color-gray-400))`,
-        "gray-300": `rgb(var(--color-gray-300),0.1)`,
+        "gray-300": `rgb(var(--color-gray-300))`,
         "green-300": `rgb(var(--color-green-500))`,
         "purple-300": `rgb(var(--color-purple-300))`,
         header: `rgb(var(--color-header),0.35)`,

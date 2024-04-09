@@ -11,7 +11,11 @@ const NavLink: React.FC<LinkProps & HTMLAttributes<HTMLAnchorElement>> = ({
   const router = useRouter()
   let activeNav = href === `${router.pathname}`
   return (
-    <Link href={href} className={`${activeNav ? "text-purple-300" : ""} ${className} `} {...props}>
+    <Link
+      href={href}
+      className={`${activeNav ? "text-purple-300" : ""} ${className}  text-gray-300`}
+      {...props}
+    >
       {children}
     </Link>
   )

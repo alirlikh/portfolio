@@ -8,9 +8,9 @@ import FooterSlider from "@/components/footerSlider/FooterSlider"
 export default function Home() {
   return (
     <>
-      <section className=" py-2 px-6 md:px-10 flex flex-col-reverse items-center md:flex-row md:justify-between">
+      <section className=" py-2 px-6 md:px-28 flex flex-col-reverse items-center md:flex-row md:justify-between md:mt-28">
         <div className="flex flex-col w-full md:w-1/2 md:max-w-4xl">
-          <div className="flex flex-col items-center m-2 mb-5 md:items-start">
+          <div className="flex flex-col items-center m-2 mb-6 md:items-start">
             <h2 className="text-7xl font-bold my-4 p-2">Title</h2>
             <p className="text-gray-400 p-2 mx-3 text-center md:text-start">
               Lorem Ipsum is simply dummy text of the{" "}
@@ -22,7 +22,7 @@ export default function Home() {
               electronic typesetting, remaining essentially unchanged
             </p>
           </div>
-          <div className="flex flex-col items-center m-2 mt-5 *:my-3 *:mx-2 md:flex-row text-nowrap">
+          <div className="flex flex-col items-center m-2 mt-8 *:my-4 *:mx-2 md:flex-row text-nowrap">
             <span>
               <Link
                 href={"#"}
@@ -46,10 +46,13 @@ export default function Home() {
           />
         </div>
       </section>
-      <section className=" flex flex-col items-center my-20 md:flex-row md:justify-between  mx-auto">
+      <section className=" flex flex-col items-center my-28 md:flex-row md:justify-between mx-auto md:mt-56 ">
         <div className="flex items-center justify-center p-2 my-6 w-[10%] md:basis-[20%]">
           <p className="flex flex-col md:text-start text-gray-400 text-[16px] font-normal text-center">
-            4 years<span className="text-white font-bold text-[80px] text-center p-1">XP</span>
+            4 years
+            <span className="text-white font-bold text-[80px] text-center p-1 leading-[100px]">
+              XP
+            </span>
             developping
           </p>
         </div>
@@ -57,8 +60,8 @@ export default function Home() {
           <Slider></Slider>
         </div>
       </section>
-      <section className=" p-2">
-        <div className="flex flex-col justify-center items-center *:p-2 *:my-7 md:*:my-4 *:font-extrabold *:text-6xl">
+      <section className="p-2 my-48">
+        <div className="flex flex-col justify-center items-center *:p-3 *:my-7 md:*:my-4 *:font-extrabold *:text-[80px] *:leading-[130px]">
           <h2 className="text-violet-300">Codding</h2>
           <h2 className="text-violet-500">Javascript</h2>
           <h2 className="text-violet-700">React</h2>
@@ -66,8 +69,8 @@ export default function Home() {
         </div>
       </section>
       <section className="mt-60 mb-20">
-        <div className="md:my-32 my-14 sm:my-16 flex justify-center items-center  sm:text-[30px] md:text-[50px] text-[20px] text-center ">
-          <h2 className="sm:max-w-[350px] md:max-w-[500px]  max-w-[300px]">
+        <div className="md:my-16 my-9 sm:my-10 flex justify-center items-center  sm:text-[30px] md:text-[50px] text-[20px] text-center ">
+          <h2 className="sm:max-w-[350px] md:max-w-[500px]  max-w-[300px] md:leading-[80px]">
             The technologies I’ve been using...
           </h2>
         </div>

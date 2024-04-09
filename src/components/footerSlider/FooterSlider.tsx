@@ -26,10 +26,10 @@ export default function FooterSlider() {
         {technology?.map((slide: any) => (
           <SwiperSlide>
             <li
-              className="flex flex-col items-start border-2 border-gray-300 rounded-[12px] px-7 py-9"
+              className="flex flex-col items-start border-2 border-gray-700 rounded-[12px] px-7 pb-9 pt-6"
               key={slide.id}
             >
-              <h3 className="p-3 mx-3">{slide.name}</h3>
+              <h3 className="p-3 mx-3 text-nowrap">{slide.name}</h3>
               <ul className="flex flex-col p-0 ml-3 *:my-1 *:p-1">
                 {slide.items?.map((item: any, index: number) => (
                   <li className="flex flex-row justify-start items-center " key={index}>
