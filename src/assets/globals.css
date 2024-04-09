@@ -75,6 +75,17 @@ button {
   }
 }
 
+/* .gg::after {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-image: linear-gradient(to bottom, #202020, #1c1b1c, #171717, #121213, #0c0c0d);
+  z-index: 1;
+  border-radius: 999px;
+  opacity: 0.2;
+} */
+
 @import "./fonts/fonts-light.css";
 @import "./fonts/fonts-bold.css";
 @import "./fonts/fonts-medium.css";

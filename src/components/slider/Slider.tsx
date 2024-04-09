@@ -22,10 +22,10 @@ export default function Slider() {
           slidesPerView: 1.2
         },
         768: {
-          slidesPerView: 2.5
+          slidesPerView: 2.2
         }
       }}
-      spaceBetween={10}
+      spaceBetween={20}
       pagination={{
         clickable: true
       }}
@@ -42,9 +42,9 @@ export default function Slider() {
       }
     >
       {imageSrc.map((item: any, index: number) => (
-        <SwiperSlide key={index} className="">
+        <SwiperSlide key={index}>
           <div
-            className="flex rounded-[60px] justify-start items-center p-10 *:m-3"
+            className="flex h-[280px] rounded-[60px] justify-start items-center p-10 *:m-3"
             style={{ backgroundColor: item.color }}
           >
             <item.src></item.src>
