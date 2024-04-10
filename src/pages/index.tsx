@@ -1,6 +1,5 @@
 import Image from "next/image"
-// import avatar from "../../public/avatar.png"
-import profile from "/public/profile.png"
+import avatar from "../../public/images/avatar.svg"
 import Link from "next/link"
 import Slider from "@/components/slider/Slider"
 import FooterSlider from "@/components/footerSlider/FooterSlider"
@@ -8,10 +7,10 @@ import FooterSlider from "@/components/footerSlider/FooterSlider"
 export default function Home() {
   return (
     <>
-      <section className=" py-2 px-6 md:px-28 flex flex-col-reverse items-center md:flex-row md:justify-between md:mt-28">
-        <div className="flex flex-col w-full md:w-1/2 md:max-w-4xl">
-          <div className="flex flex-col items-center m-2 mb-6 md:items-start">
-            <h2 className="text-7xl font-bold my-4 p-2">Title</h2>
+      <section className=" py-2 px-6 md:px-28 flex flex-col-reverse items-center lg:flex-row md:justify-between md:mt-28">
+        <div className="flex flex-col w-full  md:max-w-4xl ">
+          <div className="flex flex-col items-center m-2 mb-6 lg:items-start">
+            <h2 className="text-4xl font-normal md:text-7xl md:font-bold my-4 p-2">Title</h2>
             <p className="text-gray-400 p-2 mx-3 text-center md:text-start">
               Lorem Ipsum is simply dummy text of the{" "}
               <span className="font-bold text-lg text-white">printing</span> printing and{" "}
@@ -38,11 +37,11 @@ export default function Home() {
             </span>
           </div>
         </div>
-        <div className="my-6 mx-auto p-2 md:max-w-md md:m-0 ">
+        <div className="my-6 mx-auto p-2  md:m-0 ">
           <Image
-            src={profile}
+            src={avatar}
             alt="profile image"
-            className="mx-auto aspect-auto max-w-36 md:max-w-56 lg:max-w-80"
+            className="mx-auto aspect-auto max-w-36 md:max-w-56 lg:max-w-80 "
           />
         </div>
       </section>
