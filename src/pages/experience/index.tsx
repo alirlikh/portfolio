@@ -16,10 +16,12 @@ export default function Experience() {
       <div className="flex flex-col items-center ">
         <div className="flex flex-col items-center *:m-4 mb-16 text-center max-w-screen-md">
           <p className="text-gray-300 text-center p-3 text-[24px] font-light leading-[48px] ">
-            Lorem Ipsum is simply dummy text of the printing printing and typesetting industry
-            typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since
-            the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-            <span className="text-white text-[24px] font-bold  leading-[48px]">specimen book.</span>
+            {"< "}Explore my frontend development journey, Each project represents a milestone in my
+            growth, highlighting the technologies and challenges I've encountered and the lessons
+            I've learned as a{" "}
+            <span className="text-white text-[24px] font-bold  leading-[48px]">
+              Front-End Software Engineer {" />"}
+            </span>
           </p>
           <span className="text-nowrap">
             <Link
