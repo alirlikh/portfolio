@@ -5,6 +5,7 @@ import Slider from "@/components/slider/Slider"
 import FooterSlider from "@/components/footerSlider/FooterSlider"
 
 export default function Home() {
+  const date = new Date()
   return (
     <>
       <section className=" py-2 px-6 md:px-28 flex flex-col-reverse items-center lg:flex-row md:justify-between md:mt-28">
@@ -48,7 +49,7 @@ export default function Home() {
       <section className=" flex flex-col items-center my-28 md:flex-row md:justify-between mx-auto md:mt-56 ">
         <div className="flex items-center justify-center p-2 my-6 w-[10%] md:basis-[20%]">
           <p className="flex flex-col md:text-start text-gray-400 text-[16px] font-normal text-center">
-            4 years
+            + {date.getFullYear() - 2023} years
             <span className="text-white font-bold text-[80px] text-center p-1 leading-[100px]">
               XP
             </span>
