@@ -19,17 +19,17 @@ export default function Header() {
           </li>
           <li className="w-32">
             <div className="hidden md:flex flex-row  items-center justify-between ">
-              <NavLink href={"https://www.google.com"} passHref legacyBehavior>
+              <NavLink href={"https://linkedin.com/in/alireza-jalili"} passHref legacyBehavior>
                 <a target="_blank" rel="noopener noreferrer">
                   <Linkdin></Linkdin>
                 </a>
               </NavLink>
-              <NavLink href={"https://www.google.com"} passHref legacyBehavior>
+              <NavLink href={"https://github.com/alirlikh"} passHref legacyBehavior>
                 <a target="_blank" rel="noopener noreferrer">
                   <Github></Github>
                 </a>
               </NavLink>
-              <NavLink href={"mailto:john@example.com"} passHref legacyBehavior>
+              <NavLink href={"mailto:Alirlikh@gmail.com"} passHref legacyBehavior>
                 <a href="mailto:john@example.com">
                   <Mail></Mail>
                 </a>

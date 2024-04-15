@@ -11,17 +11,17 @@ export default function Footer() {
       <div className="w-full py-2 bg-gray-850 px-4 rounded-full flex flex-row justify-between items-center max-w-screen-2xl mx-auto">
         <p className="text-gray-400 text-sm m-2">Follow me</p>
         <div className="flex flex-row items-center w-24 justify-around">
-          <NavLink href={"https://www.google.com"} passHref legacyBehavior>
+          <NavLink href={"https://github.com/alirlikh"} passHref legacyBehavior>
             <a target="_blank" rel="noopener noreferrer">
               <Github></Github>
             </a>
           </NavLink>
-          <NavLink href={"https://www.google.com"} passHref legacyBehavior>
+          <NavLink href={"https://linkedin.com/in/alireza-jalili"} passHref legacyBehavior>
             <a target="_blank" rel="noopener noreferrer">
               <Linkdin></Linkdin>
             </a>
           </NavLink>
-          <NavLink href={"mailto:john@example.com"} passHref legacyBehavior>
+          <NavLink href={"mailto:Alirlikh@gmail.com"} passHref legacyBehavior>
             <a href="mailto:john@example.com">
               <Mail></Mail>
             </a>
