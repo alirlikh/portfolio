@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { useRouter } from "next/router"
+import { experiences } from "@/Data/data"
 
 export default function Experience() {
   const router = useRouter()
@@ -29,47 +30,25 @@ export default function Experience() {
             </Link>
           </span>
         </div>
-        <div className="flex flex-col bg-gray-800 rounded-[40px] px-6 py-10 *:m-3 *:p-2 md:flex-row max-w-screen-2xl mx-auto md:justify-between my-6">
-          <div className=" flex-shrink-0 order-1 ">
-            <h4 className="text-[28px] font-semibold leading-10 ">full-stack</h4>
-            <h5 className="text-purple-300 text-[22px] font-normal leading-8 my-3">contarct</h5>
-            <span className="text-[16px] font-normal leading-5 text-gray-400">
-              <time className="block">18 jul - 12 dec </time>
-              <span className="block">germany</span>
-            </span>
+
+        {experiences?.map((item: any) => (
+          <div className="flex flex-col bg-gray-800 rounded-[40px] px-6 py-10 *:m-3 *:p-2 md:flex-row max-w-screen-2xl mx-auto md:justify-between my-6">
+            <div className=" flex-shrink-0 order-1  ">
+              <h4 className="text-2xl font-semibold ">{item.jobTitle}</h4>
+              <h5 className="text-purple-300 text-[28px] font-semibold">{item.contract}</h5>
+              <span className="text-gray-400">
+                <time className="block">
+                  {item.startTime} - {item.endTime}{" "}
+                </time>
+                <span className="block">{item.location}</span>
+              </span>
+            </div>
+            <div key={item.id} className="flex-shrink basis-[70%] order-2">
+              <h4 className="text-purple-300 text-2xl font-bold ">{item.companyName}</h4>
+              <p className="p-1 md:mr-32 text-gray-400">{item.dutyDesc}</p>
+            </div>
           </div>
-          <div className="flex-shrink basis-[70%] order-2">
-            <h4 className="text-purple-300 text-xl font-semibold ">company name</h4>
-            <p className="p-1 md:mr-32 text-gray-400  font-normal leading-8">
-              Lorem Ipsum is simply dummy text of the printing printing and typesetting industry
-              typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
-              since the 1500s, when an unknown printer took a galley of type and scrambled it to
-              make a type specimen book. It has survived not only five centuries, but also the leap
-              into electronic typesetting, remaining essentially unchanged
-            </p>
-          </div>
-        </div>
-        {/* 1111 */}
-        <div className="flex flex-col bg-gray-800 rounded-[40px] px-6 py-10 *:m-3 *:p-2 md:flex-row max-w-screen-2xl mx-auto md:justify-between my-6">
-          <div className=" flex-shrink-0 order-1  ">
-            <h4 className="text-2xl font-semibold ">full-stack</h4>
-            <h5 className="text-purple-300 text-[28px] font-semibold">contarct</h5>
-            <span>
-              <time className="block">18 jul - 12 dec </time>
-              <span className="block">germany</span>
-            </span>
-          </div>
-          <div className="flex-shrink basis-[70%] order-2">
-            <h4 className="text-purple-300 text-2xl font-bold ">company name</h4>
-            <p className="p-1 md:mr-32">
-              Lorem Ipsum is simply dummy text of the printing printing and typesetting industry
-              typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
-              since the 1500s, when an unknown printer took a galley of type and scrambled it to
-              make a type specimen book. It has survived not only five centuries, but also the leap
-              into electronic typesetting, remaining essentially unchanged
-            </p>
-          </div>
-        </div>
+        ))}
       </div>
     </section>
   )

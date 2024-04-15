@@ -4,7 +4,7 @@ import "swiper/css"
 import "swiper/css/pagination"
 import { FreeMode, Pagination } from "swiper/modules"
 import Image from "next/image"
-import { technology } from "@/Data/languages"
+import { technology } from "@/Data/skills"
 
 export default function FooterSlider() {
   return (
