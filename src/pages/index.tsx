@@ -11,15 +11,14 @@ export default function Home() {
       <section className=" py-2 px-6 md:px-28 flex flex-col-reverse items-center lg:flex-row md:justify-between md:mt-28">
         <div className="flex flex-col w-full  md:max-w-4xl ">
           <div className="flex flex-col items-center m-2 mb-6 lg:items-start">
-            <h2 className="text-4xl font-normal md:text-7xl md:font-bold my-4 p-2">Title</h2>
-            <p className="text-gray-400 p-2 mx-3 text-center md:text-start">
-              Lorem Ipsum is simply dummy text of the{" "}
-              <span className="font-bold text-lg text-white">printing</span> printing and{" "}
-              <span className="font-bold text-lg text-white">typesetting industry</span> typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text ever since the
-              1500s, when an unknown printer took a galley of type and scrambled it to make a type
-              specimen book. It has survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged
+            <h2 className="text-4xl font-normal md:text-7xl my-4 mx-3 p-2 md:mt-[80px]">
+              Hi, I’m Alireza
+            </h2>
+            <p className="text-gray-400 p-2 mx-3 text-center md:text-start max-w-[500px]">
+              who a <span className="font-bold text-lg text-white"> frontend developer </span>
+              {/* <span className="font-bold text-lg text-white"></span> */}
+              with a passion for creating dynamic and user-friendly websites. With a focus on clean,
+              efficient code , I strive to build engaging digital experiences
             </p>
           </div>
           <div className="flex flex-col items-center m-2 mt-8 *:my-4 *:mx-2 md:flex-row text-nowrap">
@@ -42,7 +41,7 @@ export default function Home() {
           <Image
             src={avatar}
             alt="profile image"
-            className="mx-auto aspect-auto max-w-36 md:max-w-56 lg:max-w-80 "
+            className="mx-auto aspect-auto max-w-36 md:max-w-56 lg:max-w-80 scale-150 "
           />
         </div>
       </section>
