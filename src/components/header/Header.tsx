@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <header className="fixed p-3 left-1/2 transform -translate-x-1/2  max-w-80 bottom-2 md:max-w-[622px] md:top-0 md:bottom-auto z-10 ">
       <nav className="bg-header backdrop-blur-xl rounded-full px-5 py-2 h-[83px] overflow-auto no-scrollbar">
-        <ul className="flex flex-row p-2 justify-between *:mx-3 *:p-1 *:my-1 ">
+        <ul className="flex flex-row p-2 justify-between *:mx-3 *:p-1 *:my-1 items-center ">
           <li>
             <NavLink href={"/"}>Alireza</NavLink>
           </li>

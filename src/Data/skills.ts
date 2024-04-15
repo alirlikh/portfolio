@@ -60,11 +60,11 @@ export const technology = [
       {
         name: "Mongo db",
         url: "/images/mongo.svg"
-      },
-      {
-        name: "Sql",
-        url: "/images/mongo.svg"
       }
+      // {
+      //   name: "Sql",
+      //   url: "/images/mongo.svg"
+      // }
     ]
   }
 ]
