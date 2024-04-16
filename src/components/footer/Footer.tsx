@@ -21,7 +21,7 @@ export default function Footer() {
               <Linkdin></Linkdin>
             </a>
           </NavLink>
-          <NavLink href={"mailto:Alirlikh@gmail.com"} passHref legacyBehavior>
+          <NavLink href={"mailto:alirezajalili.pm@gmail.com"} passHref legacyBehavior>
             <a href="mailto:john@example.com">
               <Mail></Mail>
             </a>
