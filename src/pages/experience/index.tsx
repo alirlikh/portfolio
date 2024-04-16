@@ -46,8 +46,19 @@ export default function Experience() {
               </span>
             </div>
             <div key={item.id} className="flex-shrink basis-[70%] order-2">
-              <h4 className="text-purple-300 text-2xl font-bold ">{item.companyName}</h4>
-              <p className="p-1 md:mr-32 text-gray-400">{item.dutyDesc}</p>
+              <h4 className="text-purple-300 text-2xl font-bold mb-2">{item.companyName}</h4>
+              <p className="p-2 text-gray-400">
+                {item.dutyDesc?.map((duties: any) => (
+                  <span key={duties.id}>
+                    <h4 className="font-extrabold text-[19px]">{duties.name}</h4>
+                    <ul className="list-disc px-5">
+                      {duties?.duty.map((duty: any) => (
+                        <li className="mx-2">{duty}</li>
+                      ))}
+                    </ul>
+                  </span>
+                ))}
+              </p>
             </div>
           </div>
         ))}
