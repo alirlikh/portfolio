@@ -22,7 +22,7 @@ export default function Footer() {
             </a>
           </NavLink>
           <NavLink href={"mailto:alirezajalili.pm@gmail.com"} passHref legacyBehavior>
-            <a href="mailto:john@example.com">
+            <a href="mailto:alirezajalili.pm@gmail.com">
               <Mail></Mail>
             </a>
           </NavLink>
