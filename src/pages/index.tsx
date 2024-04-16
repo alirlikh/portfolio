@@ -24,7 +24,7 @@ export default function Home() {
           <div className="flex flex-col items-center m-2 mt-8 *:my-4 *:mx-2 md:flex-row text-nowrap">
             <span>
               <Link
-                href={"#"}
+                href={"/resume/alireza-jalili-cv.pdf"}
                 className="btn bg-white text-gray-900 rounded-full py-3 px-12 text-center font-bold m-2"
               >
                 Download CV

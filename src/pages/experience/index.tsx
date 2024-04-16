@@ -25,7 +25,7 @@ export default function Experience() {
           </p>
           <span className="text-nowrap">
             <Link
-              href={"#"}
+              href={"/resume/alireza-jalili-cv.pdf"}
               className="btn bg-white text-gray-900 rounded-full py-3 px-12 text-center font-bold m-2"
             >
               Download CV
