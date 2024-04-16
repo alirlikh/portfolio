@@ -31,7 +31,7 @@ export const technology = [
       },
       {
         name: "Express Js",
-        url: "/images/node.svg"
+        url: "/images/express.svg"
       },
       {
         name: "Nest Js",
@@ -60,11 +60,11 @@ export const technology = [
       {
         name: "Mongo db",
         url: "/images/mongo.svg"
+      },
+      {
+        name: "My Sql",
+        url: "/images/mysql.svg"
       }
-      // {
-      //   name: "Sql",
-      //   url: "/images/mongo.svg"
-      // }
     ]
   }
 ]
