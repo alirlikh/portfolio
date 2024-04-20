@@ -3,8 +3,14 @@ import avatar from "../../public/images/avatar.svg"
 import Link from "next/link"
 import Slider from "@/components/slider/Slider"
 import FooterSlider from "@/components/footerSlider/FooterSlider"
+import { useState } from "react"
 
 export default function Home() {
+  const [downloaded, setDownloaded] = useState<boolean>(false)
+
+  const handleClick = () => {
+    setDownloaded(true)
+  }
   const date = new Date()
   return (
     <>
@@ -26,7 +32,8 @@ export default function Home() {
               <Link
                 href={"/resume/alireza-jalili-cv.pdf"}
                 className="btn bg-white text-gray-900 rounded-full py-3 px-12 text-center font-bold m-2"
-                download
+                download={downloaded}
+                onClick={handleClick}
               >
                 Download CV
               </Link>

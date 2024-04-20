@@ -1,8 +1,14 @@
 import Link from "next/link"
 import { useRouter } from "next/router"
 import { experiences } from "@/Data/data"
+import { useState } from "react"
 
 export default function Experience() {
+  const [downloaded, setDownloaded] = useState<boolean>(false)
+
+  const handleClick = () => {
+    setDownloaded(true)
+  }
   const router = useRouter()
   function handleBackButton(): any {
     router.back()
@@ -27,7 +33,8 @@ export default function Experience() {
             <Link
               href={"/resume/alireza-jalili-cv.pdf"}
               className="btn bg-white text-gray-900 rounded-full py-3 px-12 text-center font-bold m-2"
-              download
+              download={downloaded}
+              onClick={handleClick}
             >
               Download CV
             </Link>
