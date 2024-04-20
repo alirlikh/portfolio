@@ -27,6 +27,7 @@ export default function Experience() {
             <Link
               href={"/resume/alireza-jalili-cv.pdf"}
               className="btn bg-white text-gray-900 rounded-full py-3 px-12 text-center font-bold m-2"
+              download
             >
               Download CV
             </Link>
