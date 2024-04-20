@@ -34,7 +34,10 @@ export default function Experience() {
         </div>
 
         {experiences?.map((item: any) => (
-          <div className="flex flex-col bg-gray-800 rounded-[40px] px-6 py-10 *:m-3 *:p-2 md:flex-row max-w-screen-2xl mx-auto md:justify-between my-6">
+          <div
+            key={item.id}
+            className="flex flex-col bg-gray-800 rounded-[40px] px-6 py-10 *:m-3 *:p-2 md:flex-row max-w-screen-2xl mx-auto md:justify-between my-6"
+          >
             <div className=" flex-shrink-0 order-1  ">
               <h4 className="text-2xl font-semibold ">{item.jobTitle}</h4>
               <h5 className="text-purple-300 text-[28px] font-semibold">{item.contract}</h5>
@@ -45,9 +48,9 @@ export default function Experience() {
                 <span className="block">{item.location}</span>
               </span>
             </div>
-            <div key={item.id} className="flex-shrink basis-[70%] order-2">
+            <div className="flex-shrink basis-[70%] order-2">
               <h4 className="text-purple-300 text-2xl font-bold mb-2">{item.companyName}</h4>
-              <p className="p-2 text-gray-400">
+              <div className="p-2 text-gray-400">
                 {item.dutyDesc?.map((duties: any) => (
                   <span key={duties.id}>
                     <h4 className="font-extrabold text-[19px]">{duties.name}</h4>
@@ -60,7 +63,7 @@ export default function Experience() {
                     </ul>
                   </span>
                 ))}
-              </p>
+              </div>
             </div>
           </div>
         ))}

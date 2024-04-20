@@ -40,6 +40,7 @@ export default function Home() {
         <div className="my-6 mx-auto p-2  md:m-0 ">
           <Image
             src={avatar}
+            priority
             alt="profile image"
             className="mx-auto aspect-auto max-w-36 md:max-w-56 lg:max-w-80 scale-150 "
           />
