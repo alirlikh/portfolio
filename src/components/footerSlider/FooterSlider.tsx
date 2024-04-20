@@ -24,7 +24,7 @@ export default function FooterSlider() {
     >
       <ul>
         {technology?.map((slide: any) => (
-          <SwiperSlide>
+          <SwiperSlide key={slide.id}>
             <li
               className="flex flex-col items-start border-2 border-gray-700 rounded-[12px] px-7 pb-9 pt-6"
               key={slide.id}

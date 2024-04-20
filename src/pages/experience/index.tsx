@@ -52,8 +52,10 @@ export default function Experience() {
                   <span key={duties.id}>
                     <h4 className="font-extrabold text-[19px]">{duties.name}</h4>
                     <ul className="list-disc px-5">
-                      {duties?.duty.map((duty: any) => (
-                        <li className="mx-2">{duty}</li>
+                      {duties?.duty.map((duty: any, index: number) => (
+                        <li className="mx-2" key={index}>
+                          {duty}
+                        </li>
                       ))}
                     </ul>
                   </span>
