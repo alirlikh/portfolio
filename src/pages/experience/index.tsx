@@ -17,8 +17,8 @@ export default function Experience() {
         <div className="flex flex-col items-center *:m-4 mb-16 text-center max-w-screen-md">
           <p className="text-gray-300 text-center p-3 text-[24px] font-light leading-[48px] ">
             {"< "}Explore my frontend development journey, Each project represents a milestone in my
-            growth, highlighting the technologies and challenges I've encountered and the lessons
-            I've learned as a{" "}
+            growth, highlighting the technologies and challenges I&apos;ve encountered and the
+            lessons I&apos;ve learned as a{" "}
             <span className="text-white text-[24px] font-bold  leading-[48px]">
               Front-End Software Engineer {" />"}
             </span>
