@@ -6,11 +6,6 @@ import FooterSlider from "@/components/footerSlider/FooterSlider"
 import { useState } from "react"
 
 export default function Home() {
-  const [downloaded, setDownloaded] = useState<boolean>(false)
-
-  const handleClick = () => {
-    setDownloaded(true)
-  }
   const date = new Date()
   return (
     <>
@@ -29,21 +24,13 @@ export default function Home() {
           </div>
           <div className="flex flex-col items-center m-2 mt-8 *:my-4 *:mx-2 md:flex-row text-nowrap">
             <span>
-              {/* <Link
-                passHref
-                legacyBehavior
-                href={"/resume/alireza-jalili-cv.pdf"}
-                className="btn bg-white text-gray-900 rounded-full py-3 px-12 text-center font-bold m-2"
-              > */}
               <a
-                onClick={handleClick}
-                download={downloaded}
-                href={"./alireza-jalili-cv.pdf"}
+                download
+                href={""}
                 className="btn bg-white text-gray-900 rounded-full py-3 px-12 text-center font-bold m-2"
               >
                 Download CV
               </a>
-              {/* </Link> */}
             </span>
             <span className="text-purple-300">
               <Link href={"/experience"} className="py-3 px-12c m-2">

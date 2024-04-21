@@ -4,11 +4,6 @@ import { experiences } from "@/Data/data"
 import { useState } from "react"
 
 export default function Experience() {
-  const [downloaded, setDownloaded] = useState<boolean>(false)
-
-  const handleClick = () => {
-    setDownloaded(true)
-  }
   const router = useRouter()
   function handleBackButton(): any {
     router.back()
@@ -30,21 +25,13 @@ export default function Experience() {
             </span>
           </p>
           <span className="text-nowrap">
-            {/* <Link
-              href={"/resume/alireza-jalili-cv.pdf"}
-              passHref
-              legacyBehavior
-              className="btn bg-white text-gray-900 rounded-full py-3 px-12 text-center font-bold m-2"
-            > */}
             <a
-              onClick={handleClick}
-              download={downloaded}
-              href={"./alireza-jalili-cv.pdf"}
+              download
+              href={""}
               className="btn bg-white text-gray-900 rounded-full py-3 px-12 text-center font-bold m-2"
             >
               Download CV
             </a>
-            {/* </Link> */}
           </span>
         </div>
 
