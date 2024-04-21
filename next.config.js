@@ -27,12 +27,12 @@
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+  // reactStrictMode: true,
   swcMinify: true,
   compiler: {
     removeConsole: process.env.NODE_ENV !== "development"
-  },
-  distDir: "./build"
+  }
+  // distDir: "./build"
 }
 
 const withPWA = require("next-pwa")({
