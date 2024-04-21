@@ -30,14 +30,21 @@ export default function Experience() {
             </span>
           </p>
           <span className="text-nowrap">
-            <Link
+            {/* <Link
               href={"/resume/alireza-jalili-cv.pdf"}
+              passHref
+              legacyBehavior
               className="btn bg-white text-gray-900 rounded-full py-3 px-12 text-center font-bold m-2"
-              download={downloaded}
+            > */}
+            <a
               onClick={handleClick}
+              download={downloaded}
+              href={"./alireza-jalili-cv.pdf"}
+              className="btn bg-white text-gray-900 rounded-full py-3 px-12 text-center font-bold m-2"
             >
               Download CV
-            </Link>
+            </a>
+            {/* </Link> */}
           </span>
         </div>
 

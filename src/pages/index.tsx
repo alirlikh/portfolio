@@ -29,14 +29,21 @@ export default function Home() {
           </div>
           <div className="flex flex-col items-center m-2 mt-8 *:my-4 *:mx-2 md:flex-row text-nowrap">
             <span>
-              <Link
+              {/* <Link
+                passHref
+                legacyBehavior
                 href={"/resume/alireza-jalili-cv.pdf"}
                 className="btn bg-white text-gray-900 rounded-full py-3 px-12 text-center font-bold m-2"
-                download={downloaded}
+              > */}
+              <a
                 onClick={handleClick}
+                download={downloaded}
+                href={"./alireza-jalili-cv.pdf"}
+                className="btn bg-white text-gray-900 rounded-full py-3 px-12 text-center font-bold m-2"
               >
                 Download CV
-              </Link>
+              </a>
+              {/* </Link> */}
             </span>
             <span className="text-purple-300">
               <Link href={"/experience"} className="py-3 px-12c m-2">
