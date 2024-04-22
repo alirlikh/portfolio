@@ -3,7 +3,6 @@ import avatar from "../../public/images/avatar.svg"
 import Link from "next/link"
 import Slider from "@/components/slider/Slider"
 import FooterSlider from "@/components/footerSlider/FooterSlider"
-import { useState } from "react"
 
 export default function Home() {
   const date = new Date()
@@ -26,8 +25,8 @@ export default function Home() {
             <span>
               <a
                 download
-                href={""}
-                className="btn bg-white text-gray-900 rounded-full py-3 px-12 text-center font-bold m-2"
+                href={process.env.cvUrl}
+                className="btn bg-white text-gray-900 rounded-full py-3 px-12 text-center font-bold m-2 cursor-pointer"
               >
                 Download CV
               </a>

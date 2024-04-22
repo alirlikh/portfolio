@@ -27,8 +27,8 @@ export default function Experience() {
           <span className="text-nowrap">
             <a
               download
-              href={""}
-              className="btn bg-white text-gray-900 rounded-full py-3 px-12 text-center font-bold m-2"
+              href={process.env.cvUrl}
+              className="btn bg-white text-gray-900 rounded-full py-3 px-12 text-center font-bold m-2 cursor-pointer"
             >
               Download CV
             </a>
