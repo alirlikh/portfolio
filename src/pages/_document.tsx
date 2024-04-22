@@ -6,7 +6,7 @@ export default class CustomDocument extends Document {
   }
   render() {
     return (
-      <Html>
+      <Html lang="en">
         <Head />
         <body dir="ltr" className="bg-gray-900 text-white h-full p-4 overflow-auto">
           <Main />

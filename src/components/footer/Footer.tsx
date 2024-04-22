@@ -12,17 +12,17 @@ export default function Footer() {
         <p className="text-gray-400 text-sm m-2">Follow me</p>
         <div className="flex flex-row items-center w-24 justify-around">
           <NavLink href={"https://github.com/alirlikh"} passHref legacyBehavior>
-            <a target="_blank" rel="noopener noreferrer">
+            <a target="_blank" rel="noopener noreferrer" aria-label="github">
               <Github></Github>
             </a>
           </NavLink>
           <NavLink href={"https://linkedin.com/in/alireza-jalili"} passHref legacyBehavior>
-            <a target="_blank" rel="noopener noreferrer">
+            <a target="_blank" rel="noopener noreferrer" aria-label="linkdin">
               <Linkdin></Linkdin>
             </a>
           </NavLink>
           <NavLink href={"mailto:alirezajalili.pm@gmail.com"} passHref legacyBehavior>
-            <a href="mailto:alirezajalili.pm@gmail.com">
+            <a href="mailto:alirezajalili.pm@gmail.com" aria-label="mail">
               <Mail></Mail>
             </a>
           </NavLink>

@@ -20,17 +20,17 @@ export default function Header() {
           <li className="w-32">
             <div className="hidden md:flex flex-row  items-center justify-between ">
               <NavLink href={"https://linkedin.com/in/alireza-jalili"} passHref legacyBehavior>
-                <a target="_blank" rel="noopener noreferrer">
+                <a target="_blank" rel="noopener noreferrer" aria-label="github">
                   <Linkdin></Linkdin>
                 </a>
               </NavLink>
               <NavLink href={"https://github.com/alirlikh"} passHref legacyBehavior>
-                <a target="_blank" rel="noopener noreferrer">
+                <a target="_blank" rel="noopener noreferrer" aria-label="linkdin">
                   <Github></Github>
                 </a>
               </NavLink>
               <NavLink href={"mailto:alirezajalili.pm@gmail.com"} passHref legacyBehavior>
-                <a href="mailto:alirezajalili.pm@gmail.com">
+                <a href="mailto:alirezajalili.pm@gmail.com" aria-label="mail">
                   <Mail></Mail>
                 </a>
               </NavLink>
