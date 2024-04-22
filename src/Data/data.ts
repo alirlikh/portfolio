@@ -60,3 +60,5 @@ export const educations = [
     certifcate: null
   }
 ]
+
+export const cvUrl = "https://alireza-cv.storage.iran.liara.space/alireza-jalili-cv.pdf"

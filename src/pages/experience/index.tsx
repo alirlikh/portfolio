@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { useRouter } from "next/router"
 import { experiences } from "@/Data/data"
-import { useState } from "react"
+import { cvUrl } from "@/Data/data"
 
 export default function Experience() {
   const router = useRouter()
@@ -27,7 +27,7 @@ export default function Experience() {
           <span className="text-nowrap">
             <a
               download
-              href={process.env.cvUrl}
+              href={cvUrl}
               className="btn bg-white text-gray-900 rounded-full py-3 px-12 text-center font-bold m-2 cursor-pointer"
             >
               Download CV
