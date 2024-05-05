@@ -1,11 +1,26 @@
 import Link from "next/link"
 import { useRouter } from "next/router"
 import { educations } from "@/Data/data"
+import { motion } from "framer-motion"
 
 export default function Education() {
   const router = useRouter()
   function handleBackButton(): any {
     router.back()
+  }
+
+  const fadeInAnimationVariants = {
+    initial: {
+      opacity: 0,
+      x: 100
+    },
+    animate: (index: number) => ({
+      opacity: 1,
+      x: 0,
+      transition: {
+        delay: 0.05 * index
+      }
+    })
   }
 
   return (
@@ -15,9 +30,15 @@ export default function Education() {
       </button>
 
       {educations?.map((item: any) => (
-        <div
+        <motion.div
           key={item.id}
           className="flex flex-col items-start py-4 my-8 md:py-6 px-6 border-2 border-gray-700 rounded-[40px] md:flex-row md:justify-between md:items-center md:mb-0 md:mt-12  max-w-screen-2xl mx-auto"
+          variants={fadeInAnimationVariants}
+          initial="initial"
+          whileInView="animate"
+          viewport={{
+            once: true
+          }}
         >
           <div className="flex flex-col p-1 mx-4 *:p-1 *:pl-0">
             <h3 className="text-[28px] leading-10 font-semibold mt-2">
@@ -37,7 +58,7 @@ export default function Education() {
               </Link>
             </div>
           )}
-        </div>
+        </motion.div>
       ))}
     </section>
   )

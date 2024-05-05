@@ -2,6 +2,7 @@ import Link from "next/link"
 import { useRouter } from "next/router"
 import { experiences } from "@/Data/data"
 import { cvUrl } from "@/Data/data"
+import { motion } from "framer-motion"
 
 export default function Experience() {
   const router = useRouter()
@@ -15,7 +16,11 @@ export default function Experience() {
         {"< back"}
       </button>
       <div className="flex flex-col items-center ">
-        <div className="flex flex-col items-center *:m-4 mb-16 text-center max-w-screen-md">
+        <motion.div
+          className="flex flex-col items-center *:m-4 mb-16 text-center max-w-screen-md"
+          initial={{ y: -100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+        >
           <p className="text-gray-300 text-center p-3 text-[24px] font-light leading-[48px] ">
             {"< "}Explore my frontend development journey, Each project represents a milestone in my
             growth, highlighting the technologies and challenges I&apos;ve encountered and the
@@ -33,7 +38,7 @@ export default function Experience() {
               Download CV
             </a>
           </span>
-        </div>
+        </motion.div>
 
         {experiences?.map((item: any) => (
           <div
