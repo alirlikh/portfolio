@@ -13,7 +13,7 @@ export default function Home() {
     <>
       <section className=" py-2 px-6 md:px-28 flex flex-col-reverse items-center lg:flex-row md:justify-between md:mt-28">
         <motion.div
-          className="flex flex-col w-full  md:max-w-4xl "
+          className="flex flex-col w-full  md:max-w-4xl items-center lg:items-baseline"
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
         >
