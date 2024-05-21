@@ -42,11 +42,11 @@ export default function Education() {
           }}
         >
           <div className="flex flex-col p-1 mx-4 *:p-1 *:pl-0">
-            <h3 className="text-[28px] leading-10 font-semibold mt-2">
+            <h3 className="text-[20px] md:text-[28px] md:leading-10 font-semibold mt-2 mb-2 md:mb-3 leading-7">
               {item.degree + " of " + item.degreeTitle}
             </h3>
-            <p className="text-purple-300  leading-6">{item.college}</p>
-            <span className="text-gray-400">
+            <p className="text-purple-300  leading-6 text-[14px] md:text-[16px]">{item.college}</p>
+            <span className="text-gray-400 text-[14px] md:text-[16px]">
               <time>
                 {item.startTime} - {item.GraduateTime}
               </time>
