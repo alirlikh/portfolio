@@ -20,6 +20,10 @@ export default function Experience() {
           className="flex flex-col items-center *:m-4 mb-16 text-center max-w-screen-md"
           initial={{ y: -100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
+          transition={{
+            delay: 0.1,
+            duration: 0.7
+          }}
         >
           <p className="text-gray-300 text-center p-3 text-[24px] font-light leading-[48px] ">
             {"< "}Explore my frontend development journey, Each project represents a milestone in my

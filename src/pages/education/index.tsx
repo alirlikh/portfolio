@@ -18,7 +18,8 @@ export default function Education() {
       opacity: 1,
       x: 0,
       transition: {
-        delay: 0.05 * index
+        delay: 0.55 * index,
+        duration: 0.7
       }
     })
   }
@@ -29,7 +30,7 @@ export default function Education() {
         {"< back"}
       </button>
 
-      {educations?.map((item: any) => (
+      {educations?.map((item: any, index: number) => (
         <motion.div
           key={item.id}
           className="flex flex-col items-start py-4 my-8 md:py-6 px-6 border-2 border-gray-700 rounded-[40px] md:flex-row md:justify-between md:items-center md:mb-0 md:mt-12  max-w-screen-2xl mx-auto"
