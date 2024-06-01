@@ -61,4 +61,4 @@ export const educations = [
   }
 ]
 
-export const cvUrl = "https://alireza-cv.storage.iran.liara.space/alireza-jalili-cv.pdf"
+export const cvUrl = "https://alireza-cv.storage.iran.liara.space/cv/alireza-jalili-cv.pdf"
