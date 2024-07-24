@@ -29,7 +29,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="m-3">
-        <span className="text-sm text-gray-300 p-2">Alireza © {date.getFullYear()}</span>
+        <span className="text-sm text-gray-400 p-2">Made with 👨‍💻🤦‍♂️❤️️</span>
       </div>
     </div>
   )
