@@ -12,7 +12,8 @@ export const experiences = [
         id: 1,
         name: "E-commerce Project for Asamarpich",
         duty: [
-          "As a key member of the development team, I was responsible for designing and implementing the blog and menu sections",
+          "Conceptualized and implemented the blog and menu sections to improve user engagement",
+          "Developed and integrated user authentication systems, including signup and signin pages",
           "Utilized React to create a dynamic and engaging user interface",
           "Employed MongoDB as the database for storing e-commerce data"
         ]
@@ -23,7 +24,7 @@ export const experiences = [
         duty: [
           "Spearheaded the development of an admin panel for a production and sales automation system.",
           "Implemented secure login mechanisms, including SMS-based authentication",
-          "•	Managed inventory data, displayed comprehensive statistics using intuitive charts, and facilitated invoice printing and management"
+          "Monitored and managed inventory data, presented comprehensive statistics through intuitive charts, and facilitated invoice printing and management"
         ]
       },
       {
@@ -31,9 +32,10 @@ export const experiences = [
         name: "Financial System for Tabriz University",
         duty: [
           "Designed and developed a financial system for Tabriz University",
-          "Utilized React to create a dynamic and engaging user interface",
+          "Monitored and managed inventory data, presented comprehensive statistics through intuitive charts, and facilitated invoice printing and management",
           "Integrated reporting functionalities with advanced filtering options for detailed analysis",
-          "Successfully handled the import and export of Excel and PDF files"
+          "Conducted CRUD operations for various financial tasks, ensuring data accuracy and integrity",
+          "Managed form state and validation using Formik and Yup, streamlining financial processes"
         ]
       }
     ]
