@@ -4,6 +4,7 @@ import avatar from "../../../public/images/avatar.svg"
 import Link from "next/link"
 import React from "react"
 import { cvUrl } from "@/Data/data"
+import DownloadButton from "@/components/downloadButton/DownloadButton"
 
 function Intruduce() {
   return (
@@ -29,15 +30,7 @@ function Intruduce() {
           </p>
         </div>
         <div className="flex flex-col items-center m-2 mt-8 *:my-4 *:mx-2 md:flex-row text-nowrap">
-          <span>
-            <a
-              download
-              href={cvUrl}
-              className="btn bg-white text-gray-900 rounded-full py-3 px-12 text-center font-bold m-2 cursor-pointer"
-            >
-              Download CV
-            </a>
-          </span>
+          <DownloadButton />
           <span className="text-purple-300">
             <Link href={"/experience"} className="py-3 px-12c m-2">
               See experiences

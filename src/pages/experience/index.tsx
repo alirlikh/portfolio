@@ -1,8 +1,8 @@
 import Link from "next/link"
 import { useRouter } from "next/router"
 import { experiences } from "@/Data/data"
-import { cvUrl } from "@/Data/data"
 import { motion } from "framer-motion"
+import DownloadButton from "../../components/downloadButton/DownloadButton"
 
 export default function Experience() {
   const router = useRouter()
@@ -33,15 +33,7 @@ export default function Experience() {
               Front-End Software Engineer {" />"}
             </span>
           </p>
-          <span className="text-nowrap">
-            <a
-              download
-              href={cvUrl}
-              className="btn bg-white text-gray-900 rounded-full py-3 px-12 text-center font-bold m-2 cursor-pointer"
-            >
-              Download CV
-            </a>
-          </span>
+          <DownloadButton />
         </motion.div>
 
         {experiences?.map((item: any) => (
