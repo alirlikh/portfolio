@@ -33,7 +33,7 @@ export default function Footer() {
         <p className="text-gray-400 text-sm m-2">Follow me</p>
         <div className="flex flex-row items-center w-24 justify-around">
           {iconList?.map((item: Icon) => (
-            <NavLink href={item.href} passHref legacyBehavior>
+            <NavLink key={item.id} href={item.href} passHref legacyBehavior>
               <a target="_blank" rel="noopener noreferrer" aria-label={item.name}>
                 {item.icon}
               </a>
