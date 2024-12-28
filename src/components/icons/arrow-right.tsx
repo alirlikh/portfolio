@@ -17,7 +17,7 @@ export const ArrowRight = ({ ...props }) => {
           stroke="#000000"
           stroke-width="2"
           stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinejoin="round"
         ></path>{" "}
       </g>
     </svg>
