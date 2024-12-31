@@ -18,7 +18,7 @@ export default function Education() {
       opacity: 1,
       x: 0,
       transition: {
-        delay: 0.55 * index,
+        delay: 0.35 * index,
         duration: 0.7
       }
     })
@@ -37,6 +37,7 @@ export default function Education() {
           variants={fadeInAnimationVariants}
           initial="initial"
           whileInView="animate"
+          custom={index}
           viewport={{
             once: true
           }}
