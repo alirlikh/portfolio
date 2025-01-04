@@ -6,7 +6,7 @@ import React from "react"
 import { cvUrl } from "@/Data/data"
 import DownloadButton from "@/components/downloadButton/DownloadButton"
 
-function Intruduce() {
+function Introduce() {
   return (
     <section className=" py-2 px-6 md:px-28 flex flex-col-reverse items-center lg:flex-row md:justify-between md:mt-28">
       <motion.div
@@ -67,4 +67,4 @@ function Intruduce() {
   )
 }
 
-export default Intruduce
+export default Introduce

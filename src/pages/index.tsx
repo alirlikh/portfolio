@@ -1,12 +1,12 @@
 import FooterSlider from "@/components/footerSlider/FooterSlider"
 import Banner from "@/components/banner/Banner"
 import SliderSection from "@/components/sliderSection/SliderSection"
-import Intruduce from "@/components/intruduce/Intruduce"
+import Introduce from "@/components/introduce/Intruduce"
 
 export default function Home() {
   return (
     <>
-      <Intruduce />
+      <Introduce />
       <SliderSection />
       <Banner />
       <FooterSlider />
