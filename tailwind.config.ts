@@ -1,5 +1,15 @@
 import type { Config } from "tailwindcss"
 
+function withOpacity(variableName: any): any {
+  return ({ opacityValue }: any) => {
+    if (opacityValue !== undefined) {
+      return `rgba(var(${variableName}), ${opacityValue})`
+    } else {
+      return `rgb(var(${variableName}))`
+    }
+  }
+}
+
 const config: Config = {
   content: [
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
@@ -23,16 +33,16 @@ const config: Config = {
         "2xl": "1536px"
       },
       colors: {
-        "gray-900": `rgb(var(--color-gray-900))`,
-        "gray-800": `rgb(var(--color-gray-800))`,
-        "gray-850": `rgb(var(--color-gray-850))`,
-        "gray-700": `rgb(var(--color-gray-700))`,
-        "gray-400": `rgb(var(--color-gray-400))`,
-        "gray-300": `rgb(var(--color-gray-300))`,
-        "green-300": `rgb(var(--color-green-500))`,
-        "purple-300": `rgb(var(--color-purple-300))`,
-        header: `rgb(var(--color-header),0.35)`,
-        white: `rgb(var(--color-white))`
+        "gray-900": withOpacity(`--color-gray-900`),
+        "gray-850": withOpacity(`--color-gray-850`),
+        "gray-800": withOpacity(`--color-gray-800`),
+        "gray-700": withOpacity(`--color-gray-700`),
+        "gray-400": withOpacity(`--color-gray-400`),
+        "gray-300": withOpacity(`--color-gray-300`),
+        "green-300": withOpacity(`--color-green-500`),
+        "purple-300": withOpacity(`--color-purple-300`),
+        "gray-scale": withOpacity(`--color-gray-scale`),
+        white: withOpacity(`--color-white`)
       },
       fontFamily: {
         body: ["raleway-medium", "Open Sans"],

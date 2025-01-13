@@ -23,6 +23,7 @@
 } */
 
 /* @layer base { */
+/* primary => gray */
 :root {
   --color-gray-900: 12, 12, 13;
   --color-gray-850: 16, 16, 16;
@@ -33,9 +34,16 @@
   --color-white: 255, 255, 255;
   --color-green-500: 95, 185, 176;
   --color-purple-300: 178, 146, 255;
-  --color-header: 33, 31, 35;
+  --color-gray-scale: 33, 31, 35;
+
   --color-pagination-bullet: 96, 96, 96;
   --color-pagination-bullet-active: 217, 217, 217;
+  /* secondary => light */
+  [data-theme="dark"] {
+    --color-bac: rgb(255, 253, 248);
+    --color-text-900: rgb(17 24 39);
+    --color-text-700: rgb(55 65 81);
+  }
 
   /* --swiper-pagination-color: rgb(217, 217, 217);
   --swiper-pagination-bullet-size: 13px;
