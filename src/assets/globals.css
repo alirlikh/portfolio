@@ -99,6 +99,7 @@ button {
 
 .picture-raduis {
   animation: radius-wave 8s ease-in-out 1s infinite;
+  animation-fill-mode: both;
 }
 
 /* .gg::after {
