@@ -69,7 +69,7 @@ export const projects = [
     name: "Portfolio",
     image: "/images/portfolio.png",
     githubUrl: "https://github.com/alirlikh/portfolio",
-    demoUrl: "alireza-jalili.ir"
+    demoUrl: "https://alireza-jalili.ir"
   },
   {
     id: 2,
