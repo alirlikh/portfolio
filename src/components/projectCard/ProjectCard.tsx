@@ -15,7 +15,7 @@ export default function ProjectCard({ project }: { project: Project }) {
   const { image, githubUrl, demoUrl, name } = project
   return (
     <div
-      className="max-w-96  rounded-lg bg-gray-800 w-full mx-8 mt-20 border-2 border-gray-700"
+      className="max-w-96  rounded-[40px] bg-gray-800 w-full mx-8 mt-20 border-2 border-gray-700"
       //    initial={{ y: -100, opacity: 0 }}
       //    animate={{ y: 0, opacity: 1 }}
       //    whileHover={{ y: 100, opacity: 1 }}
@@ -26,7 +26,7 @@ export default function ProjectCard({ project }: { project: Project }) {
           src={image}
           alt={`${name} project image`}
           fill
-          className="object-cover rounded-lg drop-shadow-[0px_5px_3px_rgba(var(--color-purple-300),0.5)] "
+          className="object-cover rounded-[40px] drop-shadow-[0px_5px_3px_rgba(var(--color-purple-300),0.5)] "
         />
       </div>
       {/* content */}
