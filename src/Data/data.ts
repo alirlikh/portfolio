@@ -63,4 +63,28 @@ export const educations = [
   }
 ]
 
+export const projects = [
+  {
+    id: 1,
+    name: "Portfolio",
+    image: "/images/portfolio.png",
+    githubUrl: "https://github.com/alirlikh/portfolio",
+    demoUrl: "alireza-jalili.ir"
+  },
+  {
+    id: 2,
+    name: "E-Commerce",
+    image: "/images/e-commerce.png",
+    githubUrl: "https://github.com/alirlikh/store",
+    demoUrl: "https://e-commerce-al.netlify.app/"
+  },
+  {
+    id: 3,
+    name: "Task Management App",
+    image: "/images/task-managent-app.png",
+    githubUrl: "https://github.com/alirlikh/task-management-app",
+    demoUrl: "https://symphonious-heliotrope-aeeef1.netlify.app/"
+  }
+]
+
 export const cvUrl = "https://alireza-cv.storage.iran.liara.space/cv/alireza-jalili-cv.pdf"
