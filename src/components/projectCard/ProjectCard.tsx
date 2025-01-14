@@ -1,6 +1,6 @@
 import Image from "next/image"
 import { Github } from "../icons/github"
-import NavLink from "../link/NavLink"
+
 import { Earth } from "../icons/earth"
 
 export type Project = {
@@ -38,19 +38,15 @@ export default function ProjectCard({ project }: { project: Project }) {
         <div>
           <ul className="flex flex-row justify-center items-center *:m-2">
             <li>
-              <NavLink href={githubUrl} passHref legacyBehavior>
-                <a target="_blank" rel="noopener noreferrer" aria-label="#">
-                  <Github />
-                </a>
-              </NavLink>
+              <a target="_blank" href={githubUrl} rel="noopener noreferrer" aria-label="#">
+                <Github />
+              </a>
             </li>
 
             <li>
-              <NavLink href={demoUrl} passHref legacyBehavior>
-                <a target="_blank" rel="noopener noreferrer" aria-label="#">
-                  <Earth />
-                </a>
-              </NavLink>
+              <a target="_blank" href={demoUrl} rel="noopener noreferrer" aria-label="#">
+                <Earth />
+              </a>
             </li>
           </ul>
         </div>
