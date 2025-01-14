@@ -47,11 +47,14 @@ export default function Header() {
                 key={item.id}
                 className="hidden md:flex flex-row  items-center justify-between m-0 p-1"
               >
-                <NavLink href={item.href} passHref legacyBehavior>
-                  <a target="_blank" rel="noopener noreferrer" aria-label={item.title}>
-                    {item.icon}
-                  </a>
-                </NavLink>
+                <a
+                  target="_blank"
+                  href={item.href}
+                  rel="noopener noreferrer"
+                  aria-label={item.title}
+                >
+                  {item.icon}
+                </a>
               </li>
             )
           )}
