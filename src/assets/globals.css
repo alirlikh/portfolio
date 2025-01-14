@@ -83,6 +83,24 @@ button {
   }
 }
 
+@keyframes radius-wave {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+
+.picture-raduis {
+  animation: radius-wave 8s ease-in-out 1s infinite;
+}
+
 /* .gg::after {
   content: "";
   position: absolute;
