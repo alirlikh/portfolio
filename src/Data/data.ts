@@ -84,6 +84,13 @@ export const projects = [
     image: "/images/task-managent-app.png",
     githubUrl: "https://github.com/alirlikh/task-management-app",
     demoUrl: "https://symphonious-heliotrope-aeeef1.netlify.app/"
+  },
+  {
+    id: 4,
+    name: "The Flip Game",
+    image: "/images/the-flip-game.png",
+    githubUrl: "https://github.com/alirlikh/flip-the-card",
+    demoUrl: "https://filpped-image-game.netlify.app/"
   }
 ]
 
