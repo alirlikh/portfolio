@@ -9,13 +9,13 @@ export const ArrowUp = ({ ...props }) => {
       height="64px"
       viewBox="-30.02 -30.02 90.06 90.06"
     >
-      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
       <g
         id="SVGRepo_tracerCarrier"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke="#CCCCCC"
-        stroke-width="1.140798"
+        strokeWidth="1.140798"
       ></g>
       <g id="SVGRepo_iconCarrier">
         {" "}
