@@ -23,6 +23,8 @@ export default function ProjectCard({ project }: { project: Project }) {
       {/* image */}
       <div className="w-5/6 mx-auto -mt-12 relative h-52  ">
         <Image
+          priority
+          placeholder="blur"
           src={image}
           alt={`${name} project image`}
           fill
