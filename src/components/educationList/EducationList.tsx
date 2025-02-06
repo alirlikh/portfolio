@@ -1,5 +1,5 @@
 import { educations } from "@/Data/data"
-import EducationCard from "../educationCard/educationCard"
+import EducationCard from "../../components/educationCard/EducationCard"
 
 function EducationList() {
   return (

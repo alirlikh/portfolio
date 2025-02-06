@@ -1,4 +1,4 @@
-import EducationList from "@/components/educationList/educationList"
+import EducationList from "../../components/educationList/EducationList"
 import { useRouter } from "next/router"
 
 export default function Education() {
