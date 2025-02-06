@@ -9,14 +9,14 @@ export const ArrowRight = ({ ...props }) => {
       {...props}
     >
       <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-      <g id="SVGRepo_tracerCarrier" stroke-linecap="round" strokeLinejoin="round"></g>
+      <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
       <g id="SVGRepo_iconCarrier">
         {" "}
         <path
           d="M4 12H20M20 12L16 8M20 12L16 16"
           stroke="#000000"
           strokeWidth="2"
-          stroke-linecap="round"
+          strokeLinecap="round"
           strokeLinejoin="round"
         ></path>{" "}
       </g>
