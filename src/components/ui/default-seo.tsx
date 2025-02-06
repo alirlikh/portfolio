@@ -3,9 +3,9 @@ import { DefaultSeo } from "next-seo"
 const NextSeo = () => {
   return (
     <DefaultSeo
-      title={"Alireza Jalili Potrfolio"}
+      title={"Alireza Jalili Portfolio"}
       openGraph={{
-        title: "Alireza Jalili Potrfolio",
+        title: "Alireza Jalili Portfolio",
         description:
           "Welcome to my portfolio! I'm Alireza Jalili, a frontend developer with a passion for creating beautiful and functional web experiences. Explore my projects showcasing my skills in HTML, CSS, JavaScript, and popular frameworks like React and Next.js. Let's connect and discuss how I can help bring your ideas to life on the web!",
         type: "website",
